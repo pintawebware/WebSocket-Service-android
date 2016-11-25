@@ -33,4 +33,22 @@ Unregister callback to receive responses from websocket:
 WsManager.getWsManager().unregisterCallback(Context context);
 ```
 
+Subscribe:
+
+```java
+WsManager.getWsManager().subscribe(Context context, String topicName);
+```
+
+Call:
+
+```java
+WsManager.getWsManager().call(Context context, String topicName);
+```
+
+Publish:
+
+```java
+WsManager.getWsManager().publish(Context context, String topicName, String msg);
+```
+
 [1]: http://autobahn.ws
