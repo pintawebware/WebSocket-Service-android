@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <EditText
+        android:id="@+id/et_input_ws_host"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="ws host:port here" />
+
+    <EditText
+        android:id="@+id/et_input_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/et_input_ws_host"
+        android:layout_marginTop="20dp"
+        android:hint="CALL command here" />
+
+    <EditText
+        android:id="@+id/et_input_subscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/et_input_call"
+        android:layout_marginTop="20dp"
+        android:hint="SUBSCRIBE topic here" />
+
+    <EditText
+        android:id="@+id/et_input_publish_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/et_input_subscribe"
+        android:layout_marginTop="20dp"
+        android:hint="PUBLISH topic here" />
+
+    <Button
+        android:id="@+id/b_connect_ws"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/et_input_ws_host"
+        android:layout_toRightOf="@+id/et_input_ws_host"
+        android:text="Connect" />
+
+    <Button
+        android:id="@+id/b_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/et_input_call"
+        android:layout_toEndOf="@+id/et_input_call"
+        android:layout_toRightOf="@+id/et_input_call"
+        android:text="Call" />
+
+    <Button
+        android:id="@+id/b_subscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/et_input_subscribe"
+        android:layout_toEndOf="@+id/et_input_subscribe"
+        android:layout_toRightOf="@+id/et_input_subscribe"
+        android:text="Subscribe" />
+
+    <Button
+        android:id="@+id/b_publish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/et_input_publish_message"
+        android:layout_toEndOf="@+id/et_input_publish_message"
+        android:layout_toRightOf="@+id/et_input_publish_message"
+        android:text="Publish" />
+
+    <EditText
+        android:id="@+id/et_input_publish_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/et_input_publish_topic"
+        android:hint="PUBLISH message here" />
+</RelativeLayout>
